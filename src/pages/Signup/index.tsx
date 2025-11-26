@@ -26,7 +26,7 @@ export function Signup(){
                         </div>
                     </div>
                     <p className="mb-5 text-[15px] mt-3 text-[#4b4848]">Deve ter no mínimo 8 caracteres.</p>
-                    <button type="submit" className="cursor-pointer w-full bg-[#5201d4] p-2 text-white rounded-lg text-[15px]">Criar conta</button>
+                    <button type="submit" className="cursor-pointer w-full bg-[#5201d4] p-2 text-white rounded-lg text-[15px] hover:scale-103 duration-300 ease-in-out">Criar conta</button>
                     <p className="text-center text-[15px] mt-5 text-[#4b4848]">Já tem uma conta? <span className="font-medium"><Link to={"/login"}>Iniciar sessão</Link></span></p>
                 </form>
             </div>
