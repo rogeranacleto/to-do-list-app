@@ -4,4 +4,19 @@
 body{
     background-color: #E2E2E2;
     font-family: "Inter", sans-serif;
+    background: linear-gradient(120deg, #000 44.9%, #29075f 45%) no-repeat fixed;
+}
+
+@keyframes float {
+0% { transform: translateY(0) rotate(0deg); }
+25% { transform: translateY(-4%) rotate(-2deg); }
+50% { transform: translateY(0) rotate(0deg); }
+75% { transform: translateY(-3%) rotate(2deg); }
+100% { transform: translateY(0) rotate(0deg); }
+}
+
+
+.animate-float {
+animation: float 3.6s ease-in-out infinite;
+transform-origin: center bottom;
 }
