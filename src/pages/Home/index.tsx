@@ -7,7 +7,7 @@ export function Home(){
     return(
         <div className="max-w-screen min-h-screen">
             <div className="flex flex-col items-center gap-6 pt-5">
-                <div className="bg-black w-[60%] h-35 rounded-2xl flex items-center justify-between pl-10 pr-10 border border-solid border-[#290169]">
+                <div className="bg-black w-[35%] h-35 rounded-2xl flex items-center justify-between pl-10 pr-10 border border-solid border-[#ffffff3d]">
                     <div className="flex flex-col">
                         <h1 className="text-3xl font-bold mb-3 text-white">Bom dia, Roger!</h1>
                         <p className="text-[#ffffffa8]">O que você planeja fazer hoje?</p>
@@ -16,7 +16,7 @@ export function Home(){
                         <CatAnimated/>
                     </div>
                 </div>
-                <div className="bg-black w-[60%] rounded-2xl flex flex-col pl-10 pr-10 border border-solid border-[#290169]">
+                <div className="bg-black w-[35%] rounded-2xl flex flex-col pl-10 pr-10 border border-solid border-[#ffffff3d]">
                     <div className="flex justify-between w-full mt-8">
                         <div>
                             <h2 className="text-2xl font-bold text-white">Tarefas de hoje</h2>
