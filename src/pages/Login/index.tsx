@@ -2,7 +2,7 @@ import { Link } from "react-router"
 export function Login(){
     return(
         <div className="max-w-screen min-h-screen flex items-center justify-center">
-            <div className="max-w-100 bg-black w-full min-h-105 rounded-2xl flex flex-col items-center p-6 shadow-md shadow-[#29075f]/50">
+            <div className="max-w-100 bg-black w-full min-h-105 rounded-2xl flex flex-col items-center p-6 border border-solid border-[#ffffff3d]">
                 <h1 className="text-2xl font-medium mb-2 text-white">Faça login</h1>
                 <p className="mb-7 text-[15px] text-[#ffffffa8]">Insira seu email e senha abaixo para continuar.</p>
                 <form className="flex flex-col w-full">
