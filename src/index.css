@@ -4,7 +4,7 @@
 body{
     background-color: #E2E2E2;
     font-family: "Inter", sans-serif;
-    background: linear-gradient(120deg, #000 44.9%, #29075f 45%) no-repeat fixed;
+    background: linear-gradient(120deg, #000 30%, #0a011d 90%) no-repeat fixed;
 }
 
 @keyframes float {
