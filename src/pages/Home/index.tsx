@@ -1,9 +1,10 @@
 import CatAnimated from "../../components/CatAnimated"
 import { FaPlus } from "react-icons/fa6";
-import { GoPencil } from "react-icons/go";
 import { GoTrash } from "react-icons/go";
+import { useState } from "react";
 
 export function Home(){
+const [task, setTask] = useState();
     return(
         <div className="max-w-screen min-h-screen">
             <div className="flex flex-col items-center gap-6 pt-5">
@@ -21,7 +22,8 @@ export function Home(){
                         <div>
                             <h2 className="text-2xl font-bold text-white">Tarefas de hoje</h2>
                         </div>
-                        <div>
+                        <div className="flex gap-4">
+                            <input type="text" className="bg-[#ffffff3d] w-lg rounded-lg text-white pl-3" placeholder="Criar uma tarefa" value={task}/>
                             <button className="flex items-center gap-2.5 cursor-pointer bg-[#290169] text-white rounded-lg pl-3 pr-3 pt-2 pb-2 hover:bg-[#5201d4] duration-700 hover:text-white">
                                 <FaPlus/>
                                 Criar
@@ -49,7 +51,6 @@ export function Home(){
                             <label className="text-[#ffffffa8]">Comprar pão para o café</label>
                         </div>
                         <div className="flex items-center gap-5">
-                            <GoPencil className="cursor-pointer hover:scale-110 duration-300 text-white"/>
                             <GoTrash className="cursor-pointer hover:scale-110 duration-300 hover:text-[#d30101] text-white"/>
                         </div>
                     </div>
