@@ -32,14 +32,11 @@ const deleteTask = (task: string) => {
 }   
     return(
         <div className="max-w-screen min-h-screen">
-            <div className="flex flex-col gap-6 pt-5 justify-center items-center">
-                <div className="bg-black w-[35%] rounded-2xl flex flex-col pl-10 pr-10 border border-solid border-[#ffffff3d] pb-8">
-                    <div className="flex justify-between w-full mt-8">
-                        <div>
-                            <h2 className="text-2xl font-bold text-white">Tarefas de hoje</h2>
-                        </div>
-                        <div className="flex gap-4">
-                            <input type="text" className="bg-[#ffffff3d] w-lg rounded-lg text-white pl-3" placeholder="Criar uma tarefa" value={input} onChange={(e) => setInput(e.target.value)}/>
+            <div className="flex flex-col gap-6 pt-5 justify-center items-center p-5">
+                <div className="bg-black rounded-2xl flex flex-col pl-10 pr-10 border border-solid border-[#ffffff3d] pb-8 max-w-2xl w-full">
+                    <div className="flex justify-between w-full mt-8 gap-8">
+                        <div className="flex gap-4 w-full">
+                            <input type="text" className="bg-[#ffffff3d] w-full rounded-lg text-white pl-3" placeholder="Criar uma tarefa" value={input} onChange={(e) => setInput(e.target.value)}/>
                             <button type="button" className="flex items-center gap-2.5 cursor-pointer bg-[#290169] text-white rounded-lg pl-3 pr-3 pt-2 pb-2 hover:bg-[#5201d4] duration-700 hover:text-white" onClick={createTask}>
                                 <FaPlus/>
                                 Criar
