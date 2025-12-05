@@ -18,6 +18,10 @@ useEffect(() => {
 },[tasks])
 
 const createTask = useCallback(() => {
+    if(!input){
+        alert("Preencha o campo antes de criar a tarefa")
+        return;
+    }
     setTasks([...tasks, input])
     setInput("")
 },[input, tasks])
@@ -28,7 +32,7 @@ const deleteTask = (task: string) => {
 }   
     return(
         <div className="max-w-screen min-h-screen">
-            <div className="flex flex-col items-center justify-center gap-6 pt-5 m-auto">
+            <div className="flex flex-col gap-6 pt-5 justify-center items-center">
                 <div className="bg-black w-[35%] rounded-2xl flex flex-col pl-10 pr-10 border border-solid border-[#ffffff3d] pb-8">
                     <div className="flex justify-between w-full mt-8">
                         <div>
