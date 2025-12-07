@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useCallback } from "react";
 import { MdLogout } from "react-icons/md";
 import { Link } from "react-router";
+import toast from "react-hot-toast";
 
 export function Home(){
 const [tasks, setTasks] = useState<string[]>([]);
@@ -20,18 +21,20 @@ useEffect(() => {
     localStorage.setItem("@chavetasks", JSON.stringify(tasks))
 },[tasks])
 
-const createTask = useCallback(() => {
+const createTask = useCallback(() => {  
     if(!input){
-        alert("Preencha o campo antes de criar a tarefa")
+        toast.error('Escreva uma tarefa para continuar.')
         return;
     }
     setTasks([...tasks, input])
     setInput("")
+    toast.success('Tarefa criada com sucesso.');
 },[input, tasks])
 
 const deleteTask = (task: string) => {
     let newTasks = tasks.filter((item) => item !== task)
     setTasks(newTasks)
+    toast.success('Tarefa deletada com sucesso.');
 }   
     return(
         <div className="max-w-screen min-h-screen">
